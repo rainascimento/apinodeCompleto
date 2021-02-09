@@ -2,7 +2,7 @@
 
 function alerta() {
    
-    fetch('http://localhost:3000/posts')
+    fetch('http://18.228.18.122:3000/posts')
         .then(result => {
 
             return result.json();
@@ -15,7 +15,7 @@ function alerta() {
 
 function byid() {
 
-    fetch('http://localhost:3000/posts/601ae87b716d6d141cccf9bf')
+    fetch('http://18.228.18.122:3000/posts/601ae87b716d6d141cccf9bf')
         .then(result => {
 
             return result.json();
@@ -33,7 +33,7 @@ function add() {
             nome: "Euzin"
           };
           
-          let response =  fetch('http://localhost:3000/posts', {
+          let response =  fetch('http://18.228.18.122:3000/posts', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json;charset=utf-8'
